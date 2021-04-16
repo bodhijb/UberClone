@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Uber App</string>
+
+    <string name="APP_ID">20zVNnAoLYpljfC9lf9JR7vmj5LMu4y5bKBEVf2t</string>
+    <string name="CLIENT_KEY">XySFRGm7C0eJwIux2SXt0wIwetodmEoVgeQfmDfy</string>
+    <string name="URL">https://parseapi.back4app.com/</string>
+
+
+
+</resources>

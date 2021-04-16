@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/altLightColor"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/am_imageview"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="#d5ff96"
+        android:scaleType="fitCenter"
+        android:src="@drawable/madrid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/am_et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/am_imageview"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="username"
+        android:inputType="textPersonName"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/am_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/am_et_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:hint="password"
+        android:inputType="textPassword"/>
+
+<RadioGroup
+    android:id="@+id/am_radiogroup_signup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/am_et_password"
+    app:layout_constraintEnd_toEndOf="parent"
+    >
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/am_radiobutton_pass_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Passenger"
+        />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/am_radiobutton_driver_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Driver"
+        />
+</RadioGroup>
+
+    <Button
+        android:id="@+id/am_btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/am_radiogroup_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="sign up"/>
+
+    <TextView
+        android:id="@+id/am_tv_dontwant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/am_btn_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Don't want to Sign up or Login?"
+        android:textSize="18sp"
+        />
+
+
+    <EditText
+
+        android:id="@+id/am_et_passenger_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/am_tv_dontwant"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Are you a Passenger or a Driver:"
+        android:textSize="18sp"
+         />
+
+    <Button
+        android:id="@+id/am_btn_onetimelogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/am_et_passenger_driver"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+
+        android:text="one time login"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
